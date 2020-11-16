@@ -82,7 +82,6 @@ export default {
     },
   },
   data: function () {
-    console.log(API.tags);
     return {
       api: API.tags.find(tag => tag.name === this.component),
     };

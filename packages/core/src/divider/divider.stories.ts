@@ -23,15 +23,16 @@ export default {
   },
 };
 
-export const API = (args: any) => {
+export function API(args: any) {
   return html`
     <cds-divider ...="${spreadProps(getElementStorybookArgs(args))}">
       ${args.default}
     </cds-divider>
   `;
-};
+}
 
-export const horizontal = () => {
+/** @website */
+export function horizontal() {
   return html`
     <div cds-layout="vertical gap:md">
       <p cds-text="body disable-lhe">It is often preferable to use dividers inside of layouts.</p>
@@ -39,9 +40,10 @@ export const horizontal = () => {
       <p cds-text="body disable-lhe">This allows them to span the dimensions of their containers as expected.</p>
     </div>
   `;
-};
+}
 
-export const vertical = () => {
+/** @website */
+export function vertical() {
   return html`
     <div cds-layout="horizontal gap:md align:vertical-center p-x:md" style="background:#f9f9f9">
       <cds-button size="sm" action="outline">Demo Button 1</cds-button>
@@ -56,9 +58,10 @@ export const vertical = () => {
       container.
     </p>
   `;
-};
+}
 
-export const verticalFill = () => {
+/** @website */
+export function verticalFill() {
   return html`
     <div style="background:#f9f9f9; width: 100%; height: 80px; padding: 0 49%">
       <cds-divider orientation="vertical"></cds-divider>
@@ -68,9 +71,10 @@ export const verticalFill = () => {
       container needs to have a height defined on it. Layouts, however, are preferred and recommended.
     </p>
   `;
-};
+}
 
-export const custom = () => {
+/** @website */
+export function custom() {
   return html`
     <style>
       cds-divider.app-custom {
@@ -114,4 +118,4 @@ export const custom = () => {
       </div>
     </div>
   `;
-};
+}

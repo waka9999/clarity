@@ -21,7 +21,7 @@ export default {
   },
 };
 
-export const API = (args: any) => {
+export function API(args: any) {
   return html`
     <cds-accordion ...="${spreadProps(getElementStorybookArgs(args))}">
       <cds-accordion-panel expanded>
@@ -30,9 +30,10 @@ export const API = (args: any) => {
       </cds-accordion-panel>
     </cds-accordion>
   `;
-};
+}
 
-export const basicAccordion = () => {
+/** @website */
+export function basicAccordion() {
   return html`
     <cds-accordion>
       <cds-accordion-panel expanded>
@@ -41,9 +42,10 @@ export const basicAccordion = () => {
       </cds-accordion-panel>
     </cds-accordion>
   `;
-};
+}
 
-export const customStyles = () => {
+/** @website */
+export function customStyles() {
   return html`
     <style>
       cds-accordion.app-custom {
@@ -59,4 +61,4 @@ export const customStyles = () => {
       </cds-accordion-panel>
     </cds-accordion>
   `;
-};
+}

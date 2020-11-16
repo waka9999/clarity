@@ -53,7 +53,8 @@ function getTokenPxValueTemplate(token: Token) {
   return html`<span cds-text="code">${value}</span>`;
 }
 
-export const global = () => {
+/** @website */
+export function global() {
   return html`
     <div cds-layout="vertical gap:xl">
       ${getTokensByCategory('global').map(
@@ -61,9 +62,10 @@ export const global = () => {
       )}
     </div>
   `;
-};
+}
 
-export const space = () => {
+/** @website */
+export function space() {
   return html`
     <div cds-layout="vertical gap:xl">
       ${getTokensByCategory('space').map(
@@ -76,9 +78,10 @@ export const space = () => {
       )}
     </div>
   `;
-};
+}
 
-export const layoutSpace = () => {
+/** @website */
+export function layoutSpace() {
   return html`
     <div cds-layout="vertical gap:xl">
       ${getTokensByCategory('layout-space').map(
@@ -91,9 +94,10 @@ export const layoutSpace = () => {
       )}
     </div>
   `;
-};
+}
 
-export const layout = () => {
+/** @website */
+export function layout() {
   return html`
     <div cds-layout="vertical gap:xl">
       ${getTokensByCategory('layout').map(
@@ -101,9 +105,10 @@ export const layout = () => {
       )}
     </div>
   `;
-};
+}
 
-export const typography = () => {
+/** @website */
+export function typography() {
   return html`
     <div cds-layout="vertical gap:xl">
       ${getTokensByCategory('typography').map(
@@ -111,7 +116,7 @@ export const typography = () => {
       )}
     </div>
   `;
-};
+}
 
 function getColorGroup(group: string) {
   const colors = getTokensByCategory('color');
@@ -134,7 +139,8 @@ function getColorGroup(group: string) {
   `;
 }
 
-export const color = () => {
+/** @website */
+export function color() {
   return html`
     <div cds-layout="grid cols@sm:6 cols@md:4 gap:xl">
       <div cds-layout="vertical gap:xl">
@@ -163,4 +169,4 @@ export const color = () => {
       </div>
     </div>
   `;
-};
+}

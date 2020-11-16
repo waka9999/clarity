@@ -29,15 +29,16 @@ export default {
   },
 };
 
-export const API = (args: any) => {
+export function API(args: any) {
   return html`
     <cds-button ...="${spreadProps(getElementStorybookArgs(args))}">
       ${args.default}
     </cds-button>
   `;
-};
+}
 
-export const form = () => {
+/** @website */
+export function form() {
   return html`
     <form
       cds-layout="vertical gap:md"
@@ -53,9 +54,10 @@ export const form = () => {
       <cds-button type="submit">submit</cds-button>
     </form>
   `;
-};
+}
 
-export const actions = () => {
+/** @website */
+export function actions() {
   return html`
     <div cds-layout="horizontal gap:sm">
       <cds-button>solid</cds-button>
@@ -63,9 +65,10 @@ export const actions = () => {
       <cds-button action="flat">flat</cds-button>
     </div>
   `;
-};
+}
 
-export const status = () => {
+/** @website */
+export function status() {
   return html`
     <div cds-layout="horizontal gap:sm">
       <cds-button>primary</cds-button>
@@ -74,9 +77,10 @@ export const status = () => {
       <cds-button status="danger" disabled>disabled</cds-button>
     </div>
   `;
-};
+}
 
-export const statusOutline = () => {
+/** @website */
+export function statusOutline() {
   return html`
     <div cds-layout="horizontal gap:sm">
       <cds-button action="outline">primary</cds-button>
@@ -85,9 +89,10 @@ export const statusOutline = () => {
       <cds-button action="outline" disabled>disabled</cds-button>
     </div>
   `;
-};
+}
 
-export const iconWithText = () => {
+/** @website */
+export function iconWithText() {
   return html`
     <div cds-layout="vertical gap:md">
       <div cds-layout="horizontal gap:sm">
@@ -106,9 +111,10 @@ export const iconWithText = () => {
       </div>
     </div>
   `;
-};
+}
 
-export const iconWithTextAndBadge = () => {
+/** @website */
+export function iconWithTextAndBadge() {
   return html`
     <div cds-layout="vertical gap:md">
       <div cds-layout="horizontal gap:sm">
@@ -133,9 +139,10 @@ export const iconWithTextAndBadge = () => {
       </div>
     </div>
   `;
-};
+}
 
-export const textAndBadge = () => {
+/** @website */
+export function textAndBadge() {
   return html`
     <div cds-layout="vertical gap:md">
       <div cds-layout="horizontal gap:sm">
@@ -161,9 +168,10 @@ export const textAndBadge = () => {
       </div>
     </div>
   `;
-};
+}
 
-export const links = () => {
+/** @website */
+export function links() {
   return html`
     <div cds-layout="horizontal gap:sm">
       <cds-button>
@@ -196,9 +204,10 @@ export const links = () => {
       </a>
     </div>
   `;
-};
+}
 
-export const sizes = () => {
+/** @website */
+export function sizes() {
   return html`
     <div cds-layout="vertical gap:md">
       <div cds-layout="horizontal align-items:left gap:sm">
@@ -211,9 +220,10 @@ export const sizes = () => {
       </div>
     </div>
   `;
-};
+}
 
-export const block = () => {
+/** @website */
+export function block() {
   return html`
     <div cds-layout="vertical gap:sm align:horizontal-stretch">
       <cds-button block>Default ('md')</cds-button>
@@ -222,9 +232,10 @@ export const block = () => {
       <cds-button block action="outline" size="sm">Compact ('sm')</cds-button>
     </div>
   `;
-};
+}
 
-export const loading = () => {
+/** @website */
+export function loading() {
   return html`
     <div cds-layout="vertical gap:md">
       <div cds-layout="horizontal gap:sm align-items:bottom">
@@ -241,9 +252,10 @@ export const loading = () => {
       </div>
     </div>
   `;
-};
+}
 
-export const customStyles = () => {
+/** @website */
+export function customStyles() {
   return html`
     <style>
       .btn-branding {
@@ -271,4 +283,4 @@ export const customStyles = () => {
     </style>
     <cds-button class="btn-branding">button</cds-button>
   `;
-};
+}
